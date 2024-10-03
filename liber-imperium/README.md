@@ -1,6 +1,6 @@
 # Liber Imperium
 
-A system roughly built off of the  "**UNOFFICIAL** system for playing Dark Heresy 2E on [Foundry VTT](https://foundryvtt.com/)."
+A rough system built off of the  "**UNOFFICIAL** system for playing Dark Heresy 2E on [Foundry VTT](https://foundryvtt.com/)."
 
 "It provides support for **character sheets only**, game content should be drawn from official source books."
 
