@@ -9,3 +9,5 @@ There may or may not be some stranded, left over code from when I tried to port 
 
 # That's about it
 I usually fix issues as I uncover them in play, I just can't find a way to fix the Security problem. If you use this system (thank youf for that) please tell me any issues, and I'll try to resolve them. Again, this is literally my first project related to coding in any regard.
+
+# This is also my first time using Github, too.
