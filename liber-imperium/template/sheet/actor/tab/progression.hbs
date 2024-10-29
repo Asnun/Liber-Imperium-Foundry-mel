@@ -112,15 +112,17 @@
                 </div>
             </div>
         </div>
+	 <div class="psychic-elements">
         <div class="psychic-powers border">
             <h1>{{localize "TITLE.PSYCHIC_POWERS"}}</h1>
             <div class="header">
                 <div class="class">
                     <label>{{localize "PSYCHIC_POWER.CLASS"}}</label>
-                    <select name="system.psy.class">
+					<select id="psyker-class-dropdown" name="system.psy.class">
                         {{selectOptions (config "psykerClass") selected=system.psy.class localize=true}}
                     </select>
                 </div>
+			<div class="psychic-elements">
                 <div class="rating">
                     <div class="flex">
                         <label>{{localize "PSYCHIC_POWER.RATING"}}</label>
@@ -131,6 +133,7 @@
                         <input name="system.psy.cost" type="number" value="{{system.psy.cost}}" data-dtype="Number" />
                     </div>
                 </div>
+			</div>
             </div>
             <div class="item-list">
                 <div class="flex header">
@@ -156,6 +159,7 @@
                 </div>
             </div>
         </div>
+	 </div>
     </div>
     <div class="skills border">
         <h1>{{localize "TITLE.SKILLS"}}</h1>
@@ -185,6 +189,7 @@
                     {{#if skill.isSpecialist}}
                         <div class="flex header">
                             <b class="name">{{localize skill.label}}</b>
+							<a class="button item-create" title="To Add Skills go to: 'Liber-Imperium/template.json' and add them manually." data-type="Skills are Hardcoded, sorry."><i class="fas fa-plus"></i></a>
                         </div>
                         {{#each skill.specialities as |speciality keySpe|}}
                             <div class="speciality item flex row">

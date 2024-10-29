@@ -310,9 +310,15 @@
   "PSYCHIC_POWER.SHORT_DESCRIPTION": "Short Description",
   "PSYCHIC_POWER.BOLT": "Bolt",
   "PSYCHIC_POWER.BARRAGE": "Barrage",
+  "PSYCHIC_POWER.NOVA": "Nova",
+  "PSYCHIC_POWER.LANCE": "Lance",
   "PSYCHIC_POWER.STORM": "Storm",
   "PSYCHIC_POWER.BLAST": "Blast",
+  "PSYCHIC_POWER.TIER": "Tier",
+  "PSYCHIC_POWER.APTITUDES": "Aptitudes",
 
+  "PSYCHIC_POWER.UNTOUCHABLE": "Null",
+  "PSYCHIC_POWER.BLUNT": "Blunt",
   "PSYCHIC_POWER.BOUND": "Bound",
   "PSYCHIC_POWER.UNBOUND": "Unbound",
   "PSYCHIC_POWER.DAEMONIC": "Daemonic",
@@ -351,6 +357,7 @@
   "SKILL.SURVIVAL": "Survival",
   "SKILL.TECH_USE": "Tech Use",
   "SKILL.TRADE": "Trade",
+  "SKILL.TACTICS": "Tactics",
 
   "SKILL.NAME": "Name",
   "SKILL.ADVANCE": "Advance",

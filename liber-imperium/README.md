@@ -1,16 +1,15 @@
-# Liber Imperium
+# Dark Heresy 2E - Continued
 
-A rough system built off of the  "**UNOFFICIAL** system for playing Dark Heresy 2E on [Foundry VTT](https://foundryvtt.com/)."
+An **UNOFFICIAL** system for playing Dark Heresy 2E on [Foundry VTT](https://foundryvtt.com/).
 
-"It provides support for **character sheets only**, game content should be drawn from official source books."
+It provides support for **character sheets only**, game content should be drawn from official source books.
 
-"The project is being continued under the GPL-3.0 License after the original author deleted their project."
+The project is being continued under the GPL-3.0 License after the original author deleted their project.
 
 ## Install
-1. Go the file directory that contains FoundryVTT.
-2. Follow this path: ...FoundryVTT\Data\systems
-3. Drag the file installed here (liber-imperium) into that area.
-4. You should be good to go.
+1. Go to the setup page and choose **Game Systems**.
+2. Click the **Install System** button, and paste in this [manifest link](https://raw.githubusercontent.com/moo-man/DarkHeresy2E-FoundryVTT/master/system.json)
+3. Create a Game World using the Dark Heresy system.
 
 ## Preview
 ![Acolyte 1](https://raw.githubusercontent.com/moo-man/DarkHeresy2E-FoundryVTT/master/asset/preview/acolyte1.jpg)  

@@ -789,6 +789,10 @@ class DarkHeresyItem extends Item {
                 return game.i18n.localize("PSYCHIC_POWER.BARRAGE");
             case "storm":
                 return game.i18n.localize("PSYCHIC_POWER.STORM");
+            case "storm":
+                return game.i18n.localize("PSYCHIC_POWER.NOVA");
+            case "storm":
+                return game.i18n.localize("PSYCHIC_POWER.LANCE");				
             default:
                 return game.i18n.localize("PSYCHIC_POWER.BOLT");
         }
@@ -1553,6 +1557,8 @@ function _computeRateOfFire(rollData) {
 
         case "bolt":
         case "blast":
+		case "nova":
+		case "lance":
             rollData.attackType.modifier = 0;
             rollData.attackType.hitMargin = 1;
             rollData.attackType.maxHits = 1;
@@ -3681,10 +3687,12 @@ Dh.attackTypeMelee = {
 
 Dh.attackTypePsy = {
     none: "ATTACK_TYPE.NONE",
-    bolt: "PSYCHIC_POWER.BOLT",
     barrage: "PSYCHIC_POWER.BARRAGE",
-    storm: "PSYCHIC_POWER.STORM",
-    blast: "PSYCHIC_POWER.BLAST"
+    blast: "PSYCHIC_POWER.BLAST",
+    bolt: "PSYCHIC_POWER.BOLT",
+    lance: "PSYCHIC_POWER.LANCE",
+	nova: "PSYCHIC_POWER.NOVA",
+	storm: "PSYCHIC_POWER.STORM"
 };
 
 Dh.ranges = {
@@ -3773,6 +3781,8 @@ Dh.weaponClass = {
 };
 
 Dh.psykerClass = {
+	psychicNull: "PSYCHIC_POWER.UNTOUCHABLE",
+    blunt: "PSYCHIC_POWER.BLUNT", 
     bound: "PSYCHIC_POWER.BOUND",
     unbound: "PSYCHIC_POWER.UNBOUND",
     daemonic: "PSYCHIC_POWER.DAEMONIC"
