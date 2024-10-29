@@ -19,87 +19,98 @@
         <b class="item" data-tab="notes">{{localize "TAB.NOTES"}}</b>
     </div>
 
-    <div class="sheet-body">
-        <div class="tab" data-group="primary" data-tab="data">
-            <div class="stats border">
-                <h1>{{localize "TITLE.STATS"}}</h1>
-                <div class="stats-row">
-                    <div class="stat prerequisite">
-                        <label>{{localize "PSYCHIC_POWER.PREREQUISITE"}}</label>
-                        <input name="system.prerequisite" type="text" value="{{system.prerequisite}}" />
-                    </div>
-                    <div class="stat action">
-                        <label>{{localize "PSYCHIC_POWER.ACTION"}}</label>
-                        <input name="system.action" type="text" value="{{system.action}}" />
-                    </div>
-                    <div class="stat subtype">
-                        <label>{{localize "PSYCHIC_POWER.SUBTYPE"}}</label>
-                        <input name="system.subtype" type="text" value="{{system.subtype}}" />
-                    </div>
+<div class="sheet-body">
+    <div class="tab" data-group="primary" data-tab="data">
+        <div class="stats border">
+            <h1>{{localize "TITLE.STATS"}}</h1>
+            <div class="stats-row">
+                <div class="stat tier">
+                    <label>{{localize "PSYCHIC_POWER.TIER"}}</label>
+                    <input name="system.tier" type="number" value="{{system.tier}}" min="1" max="3" style="width: 40px;" placeholder="1"/>
+				<div class="stat aptitudes" style="margin-left: 10px;">
+                    <label>{{localize "PSYCHIC_POWER.APTITUDES"}}</label> 
+                    <input name="system.aptitude1" type="text" value="{{system.aptitude1}}" placeholder="Aptitude 1" />
+                    <input name="system.aptitude2" type="text" value="{{system.aptitude2}}" placeholder="Aptitude 2" />
                 </div>
-                <div class="stats-row">
-                    <div class="stat focus-power">
-                        <label>{{localize "PSYCHIC_POWER.FOCUS_POWER"}}</label>
-                        <input name="system.focusPower.difficulty" type="number" value="{{system.focusPower.difficulty}}" data-dtype="Number" />
-                        <input name="system.focusPower.test" type="text" value="{{system.focusPower.test}}" />
-                    </div>
-                    <div class="stat range">
-                        <label>{{localize "PSYCHIC_POWER.RANGE"}}</label>
-                        <input name="system.range" type="text" value="{{system.range}}" />
-                    </div>
-                    <div class="stat sustained">
-                        <label>{{localize "PSYCHIC_POWER.SUSTAINED"}}</label>
-                        <input name="system.sustained" type="text" value="{{system.sustained}}" />
-                    </div>
-                </div>
-                <div class="stats-row">
-                    <div class="stat damage">
-                        <label>{{localize "PSYCHIC_POWER.DAMAGE_FULL"}}</label>
-                        <input name="system.damage.formula" type="text" value="{{system.damage.formula}}" />
-                        <select name="system.damage.type">
-                            {{selectOptions (config "damageTypes") selected=system.damage.type localize=true}}
-                        </select>
-                    </div>
-                    <div class="stat penetration">
-                        <label>{{localize "PSYCHIC_POWER.PENETRATION"}}</label>
-                        <input name="system.damage.penetration" type="text" value="{{system.damage.penetration}}" />
-                    </div>
-                    <div class="stat zone">
-                        <label>{{localize "PSYCHIC_POWER.ZONE"}}</label>
-                        <select name="system.damage.zone">
-                            {{selectOptions (config "attackTypePsy") selected=system.damage.zone localize=true}}
-                        </select>
-                    </div>
-                </div>
-                <div class="stats-row">
-                    <div class="stat special">
-                        <label>{{localize "PSYCHIC_POWER.SPECIAL"}}</label>
-                        <input name="system.damage.special" type="text" value="{{system.damage.special}}" />
-                    </div>
-                </div>
-                <div class="stats-row">
-                    <div class="stat short-description">
-                        <label style="width: 90px">{{localize "PSYCHIC_POWER.SHORT_DESCRIPTION"}}</label>
-                        <input name="system.shortDescription" type="text" value="{{system.shortDescription}}" />
-                    </div>
                 </div>
             </div>
-        </div>
-        <div class="tab" data-group="primary" data-tab="effect">
-            <div class="notes-editor border">
-                <h1>{{localize "TITLE.EFFECT"}}</h1>
-                <div style="height: 160px; width: 100%">
-                    {{editor enrichment.system.effect target="system.effect" engine="prosemirror" button=true owner=owner editable=editable}}
+            <div class="stats-row">
+                <div class="stat prerequisite">
+                    <label>{{localize "PSYCHIC_POWER.PREREQUISITE"}}</label>
+                    <input name="system.prerequisite" type="text" value="{{system.prerequisite}}" />
+                </div>
+                <div class="stat action">
+                    <label>{{localize "PSYCHIC_POWER.ACTION"}}</label>
+                    <input name="system.action" type="text" value="{{system.action}}" />
+                </div>
+                <div class="stat subtype">
+                    <label>{{localize "PSYCHIC_POWER.SUBTYPE"}}</label>
+                    <input name="system.subtype" type="text" value="{{system.subtype}}" />
                 </div>
             </div>
-        </div>
-        <div class="tab" data-group="primary" data-tab="notes">
-            <div class="notes-editor border">
-                <h1>{{localize "TITLE.NOTES"}}</h1>
-                <div style="height: 160px; width: 100%">
-                    {{editor enrichment.system.description target="system.description" engine="prosemirror" button=true owner=owner editable=editable}}
+            <div class="stats-row">
+                <div class="stat focus-power">
+                    <label>{{localize "PSYCHIC_POWER.FOCUS_POWER"}}</label>
+                    <input name="system.focusPower.difficulty" type="number" value="{{system.focusPower.difficulty}}" data-dtype="Number" />
+                    <input name="system.focusPower.test" type="text" value="{{system.focusPower.test}}" />
+                </div>
+                <div class="stat range">
+                    <label>{{localize "PSYCHIC_POWER.RANGE"}}</label>
+                    <input name="system.range" type="text" value="{{system.range}}" />
+                </div>
+                <div class="stat sustained">
+                    <label>{{localize "PSYCHIC_POWER.SUSTAINED"}}</label>
+                    <input name="system.sustained" type="text" value="{{system.sustained}}" />
+                </div>
+            </div>
+            <div class="stats-row">
+                <div class="stat damage">
+                    <label>{{localize "PSYCHIC_POWER.DAMAGE_FULL"}}</label>
+                    <input name="system.damage.formula" type="text" value="{{system.damage.formula}}" />
+                    <select name="system.damage.type">
+                        {{selectOptions (config "damageTypes") selected=system.damage.type localize=true}}
+                    </select>
+                </div>
+                <div class="stat penetration">
+                    <label>{{localize "PSYCHIC_POWER.PENETRATION"}}</label>
+                    <input name="system.damage.penetration" type="text" value="{{system.damage.penetration}}" />
+                </div>
+                <div class="stat zone">
+                    <label>{{localize "PSYCHIC_POWER.ZONE"}}</label>
+                    <select name="system.damage.zone">
+                        {{selectOptions (config "attackTypePsy") selected=system.damage.zone localize=true}}
+                    </select>
+                </div>
+            </div>
+            <div class="stats-row">
+                <div class="stat special">
+                    <label>{{localize "PSYCHIC_POWER.SPECIAL"}}</label>
+                    <input name="system.damage.special" type="text" value="{{system.damage.special}}" />
+                </div>
+            </div>
+            <div class="stats-row">
+                <div class="stat short-description">
+                    <label style="width: 90px">{{localize "PSYCHIC_POWER.SHORT_DESCRIPTION"}}</label>
+                    <input name="system.shortDescription" type="text" value="{{system.shortDescription}}" />
                 </div>
             </div>
         </div>
     </div>
+    <div class="tab" data-group="primary" data-tab="effect">
+        <div class="notes-editor border">
+            <h1>{{localize "TITLE.EFFECT"}}</h1>
+            <div style="height: 160px; width: 100%">
+                {{editor enrichment.system.effect target="system.effect" engine="prosemirror" button=true owner=owner editable=editable}}
+            </div>
+        </div>
+    </div>
+    <div class="tab" data-group="primary" data-tab="notes">
+        <div class="notes-editor border">
+            <h1>{{localize "TITLE.NOTES"}}</h1>
+            <div style="height: 160px; width: 100%">
+                {{editor enrichment.system.description target="system.description" engine="prosemirror" button=true owner=owner editable=editable}}
+            </div>
+        </div>
+    </div>
+</div>
 </form>

@@ -258,12 +258,6 @@
                 "starter": false,
                 "cost": 0
               },
-              "askellonSector": {
-                "label": "Askellon Sector",
-                "advance": -20,
-                "starter": false,
-                "cost": 0
-              },
               "chartistCaptains": {
                 "label": "Chartist Captains",
                 "advance": -20,
@@ -897,7 +891,7 @@
             "cost": 0
           },
 	          "Tactics": {
-            "label": "Tactics",
+            "label": "SKILL.TACTICS",
             "characteristics": [
               "Int"
             ],
@@ -1162,7 +1156,7 @@
         "psy": {
           "rating": 0,
           "sustained": 0,
-          "class": "bound",
+          "class": "blunt",
           "cost": 0
         }
       }
@@ -1200,76 +1194,6 @@
       "corruption": 0,
       "aptitudes": {},
       "size": 4
-    },
-	"ship": {
-      "hullClass": "",
-      "hullName": "",
-      "speed": 0,
-      "manoeuvrability": 0,
-      "detection": 0,
-      "turretRating": 0,
-      "shields": 0,
-      "armour": 0,
-      "hullIntegrity": {
-        "max": 0,
-        "value": 0
-      },
-      "space": {
-        "max": 0,
-        "value": 0
-      },
-      "power": {
-        "max": 0,
-        "value": 0
-      },
-      "points": {
-        "base": 0,
-        "components": 0,
-        "total": 0
-      },
-      "weaponCapacity": {
-        "dorsal": 0,
-        "prow": 0,
-        "keel": 0,
-        "port": 0,
-        "starboard": 0
-      },
-      "crewCount": {
-        "max": 0,
-        "value": 0
-      },
-      "crewMorale": {
-        "max": 0,
-        "value": 0
-      },
-      "crewSkill": "",
-      "namedCrew": {
-        "lordCaptain": "",
-        "firstOfficer": "",
-        "enginseerPrime": "",
-        "highFactotum": "",
-        "masterArms": "",
-        "masterHelmsman": "",
-        "masterOrdnance": "",
-        "masterEtherics": "",
-        "masterChirurgeon": "",
-        "masterWhispers": "",
-        "masterTelepathica": "",
-        "masterWarp": "",
-        "confessor": "",
-        "drivesmaster": "",
-        "congregator": "",
-        "bosun": "",
-        "infernus": "",
-        "twistcatcher": "",
-        "voxmaster": "",
-        "purser": "",
-        "cartographer": "",
-        "steward": ""
-      },
-      "complications": "",
-      "pastHistory": "",
-      "notes": ""
     },
     "npc": {
       "templates": [
