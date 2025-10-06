@@ -1,75 +1,93 @@
 {
-  "id": "liber-imperium",
-  "title": "Liber Imperium 1.6",
-  "description": "Doug Dimmadome's Dimma-done TTRPG.",
-  "version": "4.3.2",
-  "minimumCoreVersion" : 11,
-  "compatibility" : {
-    "minimum" : 11,
-    "verified" : 12,
-    "maximum" : 12
-  },
-  "templateVersion": 2,
-  "authors": [
-	{ "name":"JeansenVaars" }, 
-    { "name":"Moo Man",
-      "email": "russellt@cubicle7games.com",
-      "discord": "Moo Man#7518",
-      "reddit": "u/mooman10" }, 
-    { "name":"fredthedeadhead" },
-    { "name":"Perfectro" }, 
-    { "name":"Vendare",
-	  "discord": "Vendare#4014"},
-    { "name":"Silver292" },
-    { "name":"Giddy" },
-    { "name":"Dazzerix" },
-	{ "name":"FilippoPolo" }
-  ],
-  "scripts": [],
-  "esmodules": [
-    "script/liber-imperium.js"
-  ],
-  "styles": [
-    "css/liber-imperium.css"
-  ],
-  "packs": [
-    {
-      "name": "character-aptitudes",
-      "label": "Character Aptitudes",
-      "system": "liber-imperium",
-      "path": "./packs/aptitudes.db",
-      "type": "Item"
-    }
-  ],
-  "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json"
+    "id": "liber-imperium",
+    "title": "Liber Imperium 1.6",
+    "description": "Doug Dimmadome's Dimma-done TTRPG.",
+    "version": "4.3.2",
+    "minimumCoreVersion": 11,
+    "compatibility": {
+        "minimum": 11,
+        "verified": 12,
+        "maximum": 12
     },
-    {
-      "lang": "es",
-      "name": "Español",
-      "path": "lang/es.json"
-    },
-    {
-      "lang": "fr",
-      "name": "Français",
-      "path": "lang/fr.json"
-    },
-	  {
-      "lang": "pl",
-      "name": "Polski",
-      "path": "lang/pl.json"
-    }
-  ],
-  "gridDistance": 1,
-  "gridUnits": "m",
-  "primaryTokenAttribute": null,
-  "secondaryTokenAttribute": null,
-  "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-  "socket": true,
-  "manifest": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-  "download": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-  "license": "LICENSE.txt"
+    "templateVersion": 2,
+    "authors": [
+        {
+            "name": "JeansenVaars"
+        },
+        {
+            "name": "Moo Man",
+            "email": "russellt@cubicle7games.com",
+            "discord": "Moo Man#7518",
+            "reddit": "u/mooman10"
+        },
+        {
+            "name": "fredthedeadhead"
+        },
+        {
+            "name": "Perfectro"
+        },
+        {
+            "name": "Vendare",
+            "discord": "Vendare#4014"
+        },
+        {
+            "name": "Silver292"
+        },
+        {
+            "name": "Giddy"
+        },
+        {
+            "name": "Dazzerix"
+        },
+        {
+            "name": "FilippoPolo"
+        }
+    ],
+    "scripts": [],
+    "esmodules": [
+        "script/liber-imperium.js"
+    ],
+    "styles": [
+        "css/liber-imperium.css"
+    ],
+    "packs": [
+        {
+            "name": "character-aptitudes",
+            "label": "Character Aptitudes",
+            "system": "liber-imperium",
+            "path": "./packs/aptitudes.db",
+            "type": "Item"
+        }
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        },
+        {
+            "lang": "es",
+            "name": "Español",
+            "path": "lang/es.json"
+        },
+        {
+            "lang": "fr",
+            "name": "Français",
+            "path": "lang/fr.json"
+        },
+        {
+            "lang": "pl",
+            "name": "Polski",
+            "path": "lang/pl.json"
+        }
+    ],
+    "gridDistance": 1,
+    "gridUnits": "m",
+    "primaryTokenAttribute": null,
+    "secondaryTokenAttribute": null,
+    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "socket": true,
+    "manifest": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "download": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "license": "LICENSE.txt"
 }
